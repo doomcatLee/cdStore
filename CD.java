@@ -3,7 +3,7 @@ class CD{
   public String mName;
   public String mAlbum;
   public int mYear;
-  public int mPrice;
+  public double mPrice;
 
   public String getName(){
     return mName;
@@ -17,8 +17,12 @@ class CD{
     return mYear;
   }
 
-  public int getPrice(){
+  public double getPrice(){
     return mPrice;
+  }
+
+  public void setPrice(double price){
+    mPrice = price;
   }
   //override System.out.println
   public String toString(){
